@@ -3,13 +3,15 @@ import { RingContext } from '../../App';
 
 const Special = () => {
     
-    const ornaments = useContext(RingContext);
+    const [ornaments, house] = useContext(RingContext);
  
     return (
         <div>
             <h2>Special 
             </h2>
             <small> {ornaments}</small>
+            <br />
+            <small>house: {house}</small>
         </div>
     );
 };
